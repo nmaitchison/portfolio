@@ -282,14 +282,29 @@ nav ul li.divider{
 /*  padding-top: 20px;*/
 }
 
-ul.contact{
+.contact{
   padding-top: 40px;
-  width: 645px;
-  margin: 0 auto;
+/*  width: 645px;
+  margin: 0 auto;*/
+  text-align: center;
+  width: 100%;
 }
 
-.contact li.icon{
+.contact li{
+  display: inline-block;
+  float: none;
+  line-height: 29px;
+  height: 29px;
+  vertical-align: middle;
+}
+
+.contact .icon{
   padding-right: 10px;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: 29px;
+  vertical-align: middle;
 }
 
 .contact li{
@@ -419,18 +434,33 @@ footer{
 .twelve { width: 100%; }
 
 
-@media only screen and (max-width: 959px){
+@media only screen and (max-width: 960px){
 /*  .three { width: 33.32%; }*/
+  ul.contact li {
+    display: block;
+    clear: both;
+    width: 270px;
+    text-align: left;
+    margin: 28px auto;
+    padding: 0;
+  }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .four { width: 50%; }
+  ul.contact li {
+    /*width: 65%;*/
+  }
 }
 
 @media only screen and (max-width: 480px) {
 
   .columns { float: none; padding: 0; }
   .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve { width: 100%; }
+
+  ul.contact li {
+    /*width: 100%;*/
+  }
 
 }
 
