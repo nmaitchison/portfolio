@@ -142,7 +142,7 @@ $(function(){
 					imgs += '<img src="'+obj['images'][j]+'">';
 				}
 				var html = '<div id="work-desc" class="seven columns"><span id="back">« Back to Works</span><h2>'+obj.name+'</h2><p>'+obj.description+'</p></div><div id="work-img" class="five columns">'+imgs+'</div><div class="clear-fix"></div>';
-				$("#work-details").append(html);
+				$("#work-details").append(html).show();
 				$("#main-container").hide();
 				break;
 			}
@@ -188,6 +188,8 @@ $(function(){
 			// if not
 			else if(!menuHidden){
 				// close the menu
+				$("#main-container").show();
+				$("#work-details").hide();
 				$("nav").addClass( "hidden" );
 				// set var
 				menuHidden = true;
