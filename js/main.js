@@ -32,8 +32,8 @@ var projects = [
 			"type" : "VFX Work",
 			"skills" : ["Lighting"], 
 			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.",
-			"preview" : "images/TFH/TFH_cover.jpg",
-			"images" : ["images/TFH/MPC_VFX_O_CH0043_v32_still.jpg","images/TFH/MPC_VFX_O_CH0806_v160_still.jpg","images/TFH/MPC_VFX_O_CM0670_v53_still.jpg","images/TFH/MPC_VFX_O_PR0180_v37_still.jpg","images/TFH/MPC_VFX_O_PR0860_v62_still.jpg"]
+			"preview" : "images/tfh/TFH_cover.jpg",
+			"images" : ["images/tfh/MPC_VFX_O_CH0043_v32_still.jpg","images/tfh/MPC_VFX_O_CH0806_v160_still.jpg","images/tfh/MPC_VFX_O_CM0670_v53_still.jpg","images/tfh/MPC_VFX_O_PR0180_v37_still.jpg","images/tfh/MPC_VFX_O_PR0860_v62_still.jpg"]
 		},
 {
 			"id" : "F4",
