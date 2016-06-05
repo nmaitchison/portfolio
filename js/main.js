@@ -188,8 +188,6 @@ var projects = [
 		$('#work .work-container').prepend(html);
 	}	
 	
-	setWork();
-	
 	function setDetails(obj){
 		var imgs = '';
 		for(var j = 0; j < obj['images'].length; j++){
@@ -216,6 +214,23 @@ var projects = [
 			}
 		}
 	}); 
+	
+	if( $(window).width() <= 720 ){
+		$('#logo img').attr('src','images/assets/logo-mobile.png');
+	} else{
+		$('#logo img').attr('src','images/assets/logo-v2.png');
+	}
+	
+	setWork();
+	
+	$(window).on('resize', function(){
+		console.log('resize');
+		if( $(window).width() <= 720 ){
+			$('#logo img').attr('src','images/assets/logo-mobile.png');
+		} else{
+			$('#logo img').attr('src','images/assets/logo-v2.png');
+		}
+	});
 
 	// MENU FUNCTIONS
 
