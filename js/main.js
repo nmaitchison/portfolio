@@ -1,32 +1,9 @@
 $(function(){
 
 	// LOAD WORK
-
-	// $(".flag").click(
-	// 	function(event) {
-	// 		console.log('flag', this.id);
-
-	// 		var country = '#'+this.id;
-
-	// 		$.get('contacts-template.html', function(htmlArg){
-
-	// 			console.log('get');
-
-	// 			$("#contacts-container").empty();
-
-	// 			var source = $(htmlArg).find(country).html();
-	// 			var template = Handlebars.compile(source);
-	// 			var context = {title: "My New Post", body: "This is my first post!"}
-	// 			var html = template(context);
-	// 			$("#contacts-container").append(html);
-
-	// 		});
-	// 	}
-	// );
 	
-var projects = [
-		
-{
+	var projects = [	
+		{
 			"id" : "TFH",
 			"name" : "The Finest Hours",
 			"type" : "VFX Work",
@@ -35,7 +12,7 @@ var projects = [
 			"preview" : "images/tfh/TFH_cover.jpg",
 			"images" : ["images/tfh/MPC_VFX_O_CH0043_v32_still.jpg","images/tfh/MPC_VFX_O_CH0806_v160_still.jpg","images/tfh/MPC_VFX_O_CM0670_v53_still.jpg","images/tfh/MPC_VFX_O_PR0180_v37_still.jpg","images/tfh/MPC_VFX_O_PR0860_v62_still.jpg"]
 		},
-{
+		{
 			"id" : "F4",
 			"name" : "Fantastic Four",
 			"type" : "VFX Work",
@@ -44,7 +21,7 @@ var projects = [
 			"preview" : "images/F4/F4_cover.jpg",
 			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/MPC_VFX_FF0616_still.jpg","images/F4/MPC_VFX_FF0956_still.jpg","images/F4/MPC_VFX_FF1076_still.jpg"]
 		},
-{
+		{
 			"id" : "PCC1",
 			"name" : "Mangos - Demo Reel",
 			"type" : "Demo Reel",
@@ -124,7 +101,7 @@ var projects = [
 			"preview" : "images/emma-waffles/emma-waffles-preview.jpg",
 			"images" : ["images/emma-waffles/doodle_emma.jpg","images/emma-waffles/emmaWaffles_2.jpg","images/emma-waffles/emmaWaffles_1.jpg","images/emma-waffles/emma.jpg","images/emma-waffles/waffles.jpg"]
 		}, 
-{
+		{
 			"id" : "bellaluna",
 			"name" : "Bellaluna",
 			"type" : "Logo Design",
@@ -143,7 +120,7 @@ var projects = [
 			"preview" : "images/cougar-knits/cougar-knits-preview.jpg",
 			"images" : ["images/cougar-knits/cougar_knits.jpg"]
 		},
-{
+		{
 			"id" : "WZL",
 			"name" : "Wenzel Downhole Tools Shirt",
 			"type" : "Shirt Design",
