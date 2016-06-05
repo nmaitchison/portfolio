@@ -27,9 +27,8 @@ html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,
 	padding: 0;
 }
 
-body, a{
+body{
 	font: 18px Avenir, Helvetica, sans-serif;
-	color: #575757;
 }
 
 h2{
@@ -306,6 +305,7 @@ nav ul li.divider{
 
 #about a{
 	text-decoration: none;
+		color: #575757;
 }
 
 .contact{
