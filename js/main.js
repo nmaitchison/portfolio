@@ -95,7 +95,7 @@ $(function(){
 			"type" : "Class Project",
 			"description" : "This is an assignment I did in my Methods of Design class. I had to create  2 characters, a hero and sidekick, for a fake tv show based off of a random target audience and object given to me. I was given the age group 4-7 and cake.",
 			"preview" : "images/emma-waffles/emma-waffles-preview.jpg",
-			"images" : ["images/emma-waffles/emmaWaffles_2.jpg","images/emma-waffles/emmaWaffles_1.jpg","images/emma-waffles/emma.jpg","images/emma-waffles/waffles.jpg"]
+			"images" : ["images/emma-waffles/doodle_emma.jpg","images/emma-waffles/emmaWaffles_2.jpg","images/emma-waffles/emmaWaffles_1.jpg","images/emma-waffles/emma.jpg","images/emma-waffles/waffles.jpg"]
 		}, 
 		{
 			"id" : "cougar-knits",
@@ -132,6 +132,7 @@ $(function(){
 		var html = '<div id="work-desc" class="seven columns"><a href="#work" id="back">« Back to Works</a><h2>'+obj.name+'</h2><p>'+obj.description+'</p></div><div id="work-img" class="five columns">'+imgs+'</div><div class="clear-fix"></div>';
 		$("#work-details").append(html).show();
 		$("#main-container").hide();
+		window.scrollTo(0, 0);
 	}
 	
 	jQuery("body").on('click','a#back',function(e) {
@@ -143,7 +144,6 @@ $(function(){
 	var max = projects.length;
 	
 	$(".work-container .item").on('click',function(e) {
-		console.log(this.id);
 		$("#work-details").empty();
 		for(var i = 0; i < max; i++){
 			if(projects[i]['id'] == this.id){

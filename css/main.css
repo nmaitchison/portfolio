@@ -115,7 +115,7 @@ nav{
 nav ul{
 	width: 100vw;
 	position: absolute;
-	top: 100px;
+/* 	top: 100px; */
 	z-index: 5;
 }
 
@@ -124,6 +124,7 @@ nav ul li{
 	text-align: center;
 	padding: 10px 0;
 	font: 50px 'Bree Serif', serif;
+	height: 10.5vh;
 }
 
 nav ul li a{
@@ -298,6 +299,7 @@ nav ul li.divider{
 
 #about p{
   font-size: 28px;
+  line-height: 46px;
 /*  padding-top: 20px;*/
 }
 
@@ -318,8 +320,8 @@ nav ul li.divider{
 }
 
 .contact .icon{
-  padding-right: 10px;
-  width: 40px;
+  padding-right: 15px;
+  width: auto;
   text-align: center;
   display: inline-block;
   height: 29px;
@@ -470,6 +472,12 @@ footer{
 	.iframe-container {
 	  height: 520px;
 	}
+	
+	#work-details #work-desc{
+		padding: 100px 50px;
+		position: relative;
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -480,6 +488,15 @@ footer{
   .iframe-container iframe,
   .iframe-container {
 	  height: 420px;
+  }
+  
+  nav ul li{
+	  font-size: 42px;
+  }
+  
+  #about p{
+  	font-size: 22px;
+  	line-height: 38px;
   }
 }
 
