@@ -33,7 +33,7 @@ var projects = [
 			"skills" : ["Lighting"], 
 			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.",
 			"preview" : "images/TFH/TFH_cover.jpg",
-			"images" : ["images/TFH/MPC_VFX_O_CH0043_v32_still.jpg","images/TFH/MPC_VFX_O_CH0806_v160_still.jpg","images/TFH/TEX/MPC_VFX_O_CM0670_v53_still.jpg","images/TFH/MPC_VFX_O_PR0180_v37_still.jpg","images/TFH/TEX/MPC_VFX_O_PR0860_v62_still.jpg"]
+			"images" : ["images/TFH/MPC_VFX_O_CH0043_v32_still.jpg","images/TFH/MPC_VFX_O_CH0806_v160_still.jpg","images/TFH/MPC_VFX_O_CM0670_v53_still.jpg","images/TFH/MPC_VFX_O_PR0180_v37_still.jpg","images/TFH/MPC_VFX_O_PR0860_v62_still.jpg"]
 		},
 {
 			"id" : "F4",
@@ -42,7 +42,7 @@ var projects = [
 			"skills" : ["Lighting"], 
 			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero environment for the final battle sequence.",
 			"preview" : "images/F4/F4_cover.jpg",
-			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/TEX/MPC_VFX_FF0616_still.jpg","images/F4/TEX/MPC_VFX_FF0614_still.jpg","images/F4/TEX/MPC_VFX_FF1076_still.jpg"]
+			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/MPC_VFX_FF0616_still.jpg","images/F4/MPC_VFX_FF0956_still.jpg","images/F4/MPC_VFX_FF1076_still.jpg"]
 		},
 {
 			"id" : "PCC1",
