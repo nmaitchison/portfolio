@@ -149,8 +149,8 @@ var projects = [
 			"type" : "Shirt Design",
 			"skills" : ["Shirt Design"], 
 			"description" : "I made this design for Wenzel Downhole Tools.",
-			"preview" : "images/WZL/WZLshirt_cover.jpg",
-			"images" : ["images/WZL/wzl_mockup.jpg"]
+			"preview" : "images/wzl/WZLshirt_cover.jpg",
+			"images" : ["images/wzl/wzl_mockup.jpg"]
 		},
 
 		{
