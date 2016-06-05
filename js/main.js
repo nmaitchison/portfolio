@@ -126,8 +126,8 @@ $(function(){
 			"type" : "Shirt Design",
 			"skills" : ["Shirt Design"], 
 			"description" : "I made this design for Wenzel Downhole Tools.",
-			"preview" : "images/wzl/wzl_cover_2.jpg",
-			"images" : ["images/wzl/wzl_mockup_2.png"]
+			"preview" : "images/WZl/wzl_cover_2.jpg",
+			"images" : ["images/WZL/wzl_mockup_2.png"]
 		},
 
 		{
