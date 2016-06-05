@@ -73,7 +73,7 @@ $(function(){
 			"skills" : ["Textures","Lighting &amp; Shading"], 
 			"description" : "This is an assignment I did in my Visual Development class. I had to make the materials for the bottle and make the uvs and materials for the gear. I also had to add a sticker and water stains to the box using projections.",
 			"preview" : "images/crush/crush-preview.jpg",
-			"images" : ["images/crush/CRUSH.tga"]
+			"images" : ["images/crush/CRUSH.jpg"]
 		},			{
 			"id" : "cheese",
 			"name" : "Cheese - Classwork ",
@@ -176,13 +176,14 @@ $(function(){
 		window.scrollTo(0, 0);
 	}
 	
-	jQuery("body").on('click','a#back',function(e) {
+	jQuery('body').on('click','a#back',function(e) {
 		console.log('click');
 		$("#main-container").show();
 		$("#work-details").hide();
 	});
-	
-	$(".work-container .item").on('click',function(e) {
+
+	jQuery('body').on('click','.work-container .item',function(e) {
+	console.log('click');
 		$("#work-details").empty();
 		for(var i = 0; i < max; i++){
 			if(projects[i]['id'] == this.id){
