@@ -82,6 +82,15 @@ $(function(){
 			"description" : "This is an assignment I did in my Shading and Lighting class. I had do the materials and textures for the cheese, knife, cutting board, wine bottle and wine glass. Everything else in the scene was given to me already finished.",
 			"preview" : "images/cheese/cheese-preview.jpg",
 			"images" : ["images/cheese/CHEESE.jpg"]
+		},			
+		{
+			"id" : "buster",
+			"name" : "Buster",
+			"type" : "Freelance",
+"skills" : ["Modeling","Textures", "Lighting &amp; Shading"], 
+			"description" : "Modeled and lit a container for a sample product mockup.",
+			"preview" : "images/buster/buster-preview.jpg",
+			"images" : ["images/buster/container.png","images/buster/mockup-resize-v6.jpg"]
 		},
 		{
 			"id" : "clothing-dev",
