@@ -487,6 +487,7 @@ footer{
 	}
 	#work-details #work-img{
 		width: 100%;
+		margin-top: 8px;
 	}
 	.four { width: 50%; }
 }
