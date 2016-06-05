@@ -123,7 +123,18 @@ $(function(){
 		} 
 	];
 	
-	jQuery("body").on('click','#back',function(e) {
+	
+	function setWork(obj){
+		var imgs = '';
+		for(var j = 0; j < obj['images'].length; j++){
+			imgs += '<img src="'+obj['images'][j]+'">';
+		}
+		var html = '<div id="work-desc" class="seven columns"><a href="#work" id="back">« Back to Works</a><h2>'+obj.name+'</h2><p>'+obj.description+'</p></div><div id="work-img" class="five columns">'+imgs+'</div><div class="clear-fix"></div>';
+		$("#work-details").append(html).show();
+		$("#main-container").hide();
+	}
+	
+	jQuery("body").on('click','a#back',function(e) {
 		console.log('click');
 		$("#main-container").show();
 		$("#work-details").hide();
@@ -136,19 +147,11 @@ $(function(){
 		$("#work-details").empty();
 		for(var i = 0; i < max; i++){
 			if(projects[i]['id'] == this.id){
-				var obj = projects[i];
-				var imgs = '';
-				for(var j = 0; j < obj['images'].length; j++){
-					imgs += '<img src="'+obj['images'][j]+'">';
-				}
-				var html = '<div id="work-desc" class="seven columns"><span id="back">« Back to Works</span><h2>'+obj.name+'</h2><p>'+obj.description+'</p></div><div id="work-img" class="five columns">'+imgs+'</div><div class="clear-fix"></div>';
-				$("#work-details").append(html).show();
-				$("#main-container").hide();
+				setWork(projects[i]);
 				break;
 			}
 		}
-		
-	});
+	}); 
 
 	// MENU FUNCTIONS
 
