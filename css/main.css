@@ -70,7 +70,7 @@ body, #wrapper{
 
 #main-container{
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 }
 
 /* LANDING ------------------------------------ */
@@ -195,7 +195,7 @@ nav ul li.divider{
 }
 
 .home{
-  top: 100vh;
+  top: 0;
 }
 
 #demo-reel{
@@ -226,6 +226,10 @@ nav ul li.divider{
   box-sizing: border-box;
 }
 
+.work-container .columns{
+	margin-bottom: 30px;
+}
+
 .selected{
   opacity: .5;
 }
@@ -234,7 +238,6 @@ nav ul li.divider{
   box-sizing: border-box;
   position: relative;
   height: auto;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
@@ -386,12 +389,15 @@ footer{
   height: 100vh;
 }
 
+#work-desc #back,
 #work-desc a{
   text-decoration: none;
   font-size: 14px;
   color: #575757;
 }
 
+
+#work-desc #back:hover,
 #work-desc a:hover{
   color: #ccc;
   -webkit-transition:all .3s ease-in-out;
