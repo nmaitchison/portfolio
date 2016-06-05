@@ -108,7 +108,7 @@ $(function(){
 			"skills" : ["Logo Design"], 
 			"description" : "I designed this logo for my moms hand made cards and jewlery shop called Bellaluna.",
 			"preview" : "images/bella/bellaluna_preview.png",
-			"images" : ["images/bella/bellaluna_COLOR.png","images/bella/bellaluna_BW.png"]
+			"images" : ["images/bella/bellaluna_COLOR_2.png","images/bella/bellaluna_BW_2.png"]
 		},
 
 		{
@@ -126,8 +126,8 @@ $(function(){
 			"type" : "Shirt Design",
 			"skills" : ["Shirt Design"], 
 			"description" : "I made this design for Wenzel Downhole Tools.",
-			"preview" : "images/wzl/wzl_cover.jpg",
-			"images" : ["images/wzl/wzl_mockup.png"]
+			"preview" : "images/wzl/wzl_cover_2.jpg",
+			"images" : ["images/wzl/wzl_mockup_2.png"]
 		},
 
 		{
