@@ -115,7 +115,7 @@ $(function(){
 			"name" : "Bellaluna",
 			"type" : "Logo Design",
 			"skills" : ["Logo Design"], 
-			"description" : "I designed this logo for my moms hand made cards and jewlery shop called Bellaluna.",
+			"description" : "I designed this logo for my mom's hand made cards and jewlery shop called Bellaluna.",
 			"preview" : "images/bella/bellaluna_preview.png",
 			"images" : ["images/bella/bellaluna_COLOR_2.png","images/bella/bellaluna_BW_2.png"]
 		},
