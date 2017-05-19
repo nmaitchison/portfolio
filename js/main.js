@@ -2,14 +2,23 @@ $(function(){
 
 	// LOAD WORK
 	
-	var projects = [	
+	var projects = [
+		{
+			"id" : "KA",
+			"name" : "King Arthur Legend of the Sword",
+			"type" : "VFX Work",
+			"skills" : ["Lighting"], 
+			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.",
+			"preview" : "images/king-arthur/king-arthur-preview.png",
+			"images" : ["images/tfh/MPC_VFX_O_CH0043_v32_still.jpg","images/tfh/MPC_VFX_O_CH0806_v160_still.jpg","images/tfh/MPC_VFX_O_CM0670_v53_still.jpg","images/tfh/MPC_VFX_O_PR0180_v37_still.jpg","images/tfh/MPC_VFX_O_PR0860_v62_still.jpg"]
+		},	
 		{
 			"id" : "TFH",
 			"name" : "The Finest Hours",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"], 
 			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.",
-			"preview" : "images/tfh/TFH_cover.jpg",
+			"preview" : "images/tfh/TFH_cover.png",
 			"images" : ["images/tfh/MPC_VFX_O_CH0043_v32_still.jpg","images/tfh/MPC_VFX_O_CH0806_v160_still.jpg","images/tfh/MPC_VFX_O_CM0670_v53_still.jpg","images/tfh/MPC_VFX_O_PR0180_v37_still.jpg","images/tfh/MPC_VFX_O_PR0860_v62_still.jpg"]
 		},
 		{
@@ -18,7 +27,7 @@ $(function(){
 			"type" : "VFX Work",
 			"skills" : ["Lighting"], 
 			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero environment for the final battle sequence.",
-			"preview" : "images/F4/F4_cover.jpg",
+			"preview" : "images/F4/F4_cover.png",
 			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/MPC_VFX_FF0616_still.jpg","images/F4/MPC_VFX_FF0956_still.jpg","images/F4/MPC_VFX_FF1076_still.jpg"]
 		},
 		{
@@ -27,7 +36,7 @@ $(function(){
 			"type" : "Demo Reel",
 "skills" : ["Modeling","Textures", "Lighting &amp; Shading"], 
 			"description" : "This is the second scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
-			"preview" : "images/PCC1/PCC1-preview.jpg",
+			"preview" : "images/PCC1/PCC1-preview.png",
 			"images" : ["images/PCC1/PCC1_render.jpg","images/PCC1/PCC1_wireframe.jpg","images/PCC1/TEX/mango1_UV_BASE.jpg","images/PCC1/TEX/mango2_UV_BASE.jpg","images/PCC1/TEX/mango3_UV_BASE.jpg","images/PCC1/TEX/vase_UV_BASE.jpg"]
 		},
 		{
@@ -36,7 +45,7 @@ $(function(){
 			"type" : "Demo Reel",
 "skills" : ["Modeling","Textures", "Lighting &amp; Shading"], 
 			"description" : "This is the third scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
-			"preview" : "images/PCC2/PCC2-preview.jpg",
+			"preview" : "images/PCC2/PCC2-preview.png",
 			"images" : ["images/PCC2/PCC2_render.jpg","images/PCC2/PCC2_wireframe.jpg","images/PCC2/TEX/label2_UV.jpg","images/PCC2/TEX/label3_UV.jpg","images/PCC2/TEX/label4_UV.jpg","images/PCC2/TEX/label5_UV.jpg","images/PCC2/TEX/spool1_UV.jpg","images/PCC2/TEX/spool2_UV.jpg","images/PCC2/TEX/spool3_UV.jpg","images/PCC2/TEX/spool4_UV.jpg","images/PCC2/TEX/spool5_UV.jpg","images/PCC2/TEX/table_UV.jpg"]
 		},
 		{
@@ -45,9 +54,10 @@ $(function(){
 			"type" : "Demo Reel",
 			"skills" : ["Modeling","Textures", "Lighting &amp; Shading"], 
 			"description" : "This is the first scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
-			"preview" : "images/PCC3/PCC3-preview.jpg",
+			"preview" : "images/PCC3/PCC3-preview.png",
 			"images" : ["images/PCC3/PCC3_render.jpg","images/PCC3/PCC3_wireframe.jpg","images/PCC3/TEX/lamp_REFL.jpg"]
-		},
+		}/*
+,
 		{
 			"id" : "hallway",
 			"name" : "Hallway - Classwork",
@@ -157,21 +167,31 @@ $(function(){
 			"preview" : "images/cat/cat-preview.jpg",
 			"images" : ["images/cat/cat_main.png"]
 		} 
+*/
 	];
 	
 	var max = projects.length;
 	
 	function setWork(){
-		var html = '';
+		var vfx = '';
+		var demo = '';
 		for(var i = 0; i < max; i++){
 			var obj = projects[i],
+				html = '',
 				skills = '';
 			for(var j = 0; j < obj.skills.length; j++){
 				skills += '<li><span class="bullet">+</span>'+obj['skills'][j]+'</li>';	
 			}
+			
 			html += '<div class="four columns"><div class="item" id="'+obj.id+'"><div class="overlay"><h3>'+obj.type+'</h3><ul>'+skills+'</ul></div><img src="'+obj.preview+'"></div></div>';
+			
+			if( projects[i]['type'] == "VFX Work" ) 
+				vfx += html;
+			else 
+				demo += html;
 		}
-		$('#work .work-container').prepend(html);
+		$('#work .work-container.vfx-work').prepend(vfx);
+		$('#work .work-container.class-work').prepend(demo);
 	}	
 	
 	function setDetails(obj){
@@ -202,22 +222,7 @@ $(function(){
 		}
 	}); 
 	
-	if( $(window).width() <= 720 ){
-		$('#logo img').attr('src','images/assets/logo-mobile.png');
-	} else{
-		$('#logo img').attr('src','images/assets/logo-v2.png');
-	}
-	
 	setWork();
-	
-	$(window).on('resize', function(){
-		console.log('resize');
-		if( $(window).width() <= 720 ){
-			$('#logo img').attr('src','images/assets/logo-mobile.png');
-		} else{
-			$('#logo img').attr('src','images/assets/logo-v2.png');
-		}
-	});
 
 	// MENU FUNCTIONS
 
