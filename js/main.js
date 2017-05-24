@@ -1,4 +1,4 @@
-the-finest-hours$(function(){
+$(function(){
 
 	// LOAD WORK
 
