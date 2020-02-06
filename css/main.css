@@ -248,6 +248,10 @@ footer p {
 @media only screen and (max-width: 1300px){
   .four { width: 50%; }
   
+  #wrapper {
+    margin: 0 8% 0 15%;
+  }
+  
   .project.horizontal .details {
     flex-direction: column;
   }
@@ -261,10 +265,6 @@ footer p {
 @media only screen and (max-width: 960px){
   .four { width: 50%; }
 
-  #wrapper {
-    margin: 0 8% 0 15%;
-  }
-  
   .project.vertical {
     flex-direction: column;
   }
@@ -320,6 +320,12 @@ footer p {
   nav ul li a:after {
     top: 13px;
   }
+
+  .project{
+    margin: 48px 0;
+    padding-bottom: 48px;
+  }
+
   .project.horizontal .details,
   .project.vertical .details {
     padding-right: 12px;
