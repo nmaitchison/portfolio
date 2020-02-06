@@ -1,0 +1,45 @@
+.images{
+    overflow: hidden;
+    line-height: 0;
+}
+
+.images .slides {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.images .slides li {
+    display: none;
+    vertical-align: top;
+    width: 100%;
+    line-height: 0;
+}
+
+.images .slides li.selected {
+    display: inline-block;
+}
+
+.images .nav {
+    text-align: center;
+    margin: 18px auto 27px;
+}
+
+.images .nav li {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 3px;
+}
+
+.images .nav .item {
+    height: 12px;
+    width: 12px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.images .nav li.selected .item {
+    background-color: #000;
+    transition: background-color .6s ease;
+}
