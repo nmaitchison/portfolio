@@ -1,15 +1,34 @@
 $(function(){
-
-	// LOAD WORK
-
 	var projects = [
+		{
+			"id" : "TWB",
+			"name" : "The Willoughbys",
+			"position" : "Senior Lighting Artist & Sequence Lead / Bron Animation",
+			"type" : "VFX Work",
+			"skills" : ["Lighting"],
+			"description" : "I worked on lighting  and compositing for Bron Animation’s <i>The Willoughbys</i>.<br>Software: Katana, RenderMan, Nuke",
+			"preview" : "",
+			"images" : ["images/TWB/twb-01.jpg","images/TWB/twb-02.jpeg"],
+			"layout" : "horizontal"
+		},
+		{
+			"id" : "HM",
+			"name" : "Henchmen",
+			"position" : "Lighter & Compositor / Bron Animation",
+			"type" : "VFX Work",
+			"skills" : ["Lighting"],
+			"description" : "I worked on lighting  and compositing for Bron Animation’s <i>Henchmen</i>. The movie is still in theaters so I have no material to show yet. I’ll be updating as soon as I receive them.<br>Software: Katana, RenderMan, Nuke",
+			"preview" : "",
+			"images" : ["images/HM/hench_891_220.png","images/HM/hench_560_720.png","images/HM/hench_560_740.png","images/HM/hench_891_160.png","images/HM/hench_891_180.png"],
+			"layout" : "horizontal"
+		},
 		{
 			"id" : "KA",
 			"name" : "King Arthur Legend of the Sword",
 			"position" : "Junior Lighting TD / MPC Films Montréal",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"],
-			"description" : "I worked on lighting for characters, large environments, and smoke fx for Warner Bros’ <i>King Arthur: Legend of the Sword</i>. The movie is still in theaters so I have no material to show yet. I’ll be updating as soon as I receive them.",
+			"description" : "I worked on lighting for characters, large environments, and smoke fx for Warner Bros’ <i>King Arthur: Legend of the Sword</i>. The movie is still in theaters so I have no material to show yet. I’ll be updating as soon as I receive them.<br>Software: Katana, RenderMan",
 			"preview" : "images/king-arthur/king-arthur-preview.png",
 			"images" : ["images/king-arthur/KA_cover_v2.jpg"],
 			"layout" : "vertical"
@@ -20,7 +39,7 @@ $(function(){
 			"position" : "Junior Lighting TD / MPC Films Montréal",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"],
-			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.",
+			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.<br>Software: Katana, RenderMan",
 			"preview" : "images/the-finest-hours/TFH_cover.jpg",
 			"images" : ["images/the-finest-hours/MPC_VFX_O_CH0043_v32_still.jpg","images/the-finest-hours/MPC_VFX_O_CH0806_v160_still.jpg","images/the-finest-hours/MPC_VFX_O_CM0670_v53_still.jpg","images/the-finest-hours/MPC_VFX_O_PR0180_v37_still.jpg","images/the-finest-hours/MPC_VFX_O_PR0860_v62_still.jpg"],
 			"layout" : "horizontal"
@@ -31,7 +50,7 @@ $(function(){
 			"position" : "Junior Lighting TD / MPC Films Montréal",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"],
-			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero environment for the final battle sequence.",
+			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero environment for the final battle sequence.<br>Software: Katana, RenderMan",
 			"preview" : "images/F4/F4_cover.png",
 			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/MPC_VFX_FF0616_still.jpg","images/F4/MPC_VFX_FF0956_still.jpg","images/F4/MPC_VFX_FF1076_still.jpg"],
 			"layout" : "horizontal"
@@ -42,7 +61,7 @@ $(function(){
 			"position" : "Student / Full Sail University",
 			"type" : "Demo Reel",
 "skills" : ["Modeling","Textures", "Lighting &amp; Shading"],
-			"description" : "This is the second scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
+			"description" : "This is the second scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.<br>Software: Maya, MentalRay, Adobe Photoshop CS6",
 			"preview" : "images/PCC1/PCC1-preview.png",
 			"images" : ["images/PCC1/PCC1_render.jpg","images/PCC1/PCC1_wireframe.jpg"],
 			"layout" : "horizontal"
@@ -53,7 +72,7 @@ $(function(){
 			"position" : "Student / Full Sail University",
 			"type" : "Demo Reel",
 "skills" : ["Modeling","Textures", "Lighting &amp; Shading"],
-			"description" : "This is the third scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
+			"description" : "This is the third scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.<br>Software: Maya, MentalRay, Adobe Photoshop CS6",
 			"preview" : "images/PCC2/PCC2-preview.png",
 			"images" : ["images/PCC2/PCC2_render.jpg","images/PCC2/PCC2_wireframe.jpg"],
 			"layout" : "horizontal"
@@ -64,7 +83,7 @@ $(function(){
 			"position" : "Student / Full Sail University",
 			"type" : "Demo Reel",
 			"skills" : ["Modeling","Textures", "Lighting &amp; Shading"],
-			"description" : "This is the first scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.",
+			"description" : "This is the first scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.<br>Software: Maya, MentalRay, Adobe Photoshop CS6",
 			"preview" : "images/PCC3/PCC3-preview.png",
 			"images" : ["images/PCC3/PCC3_render.jpg","images/PCC3/PCC3_wireframe.jpg"],
 			"layout" : "vertical"
@@ -165,13 +184,9 @@ $(function(){
 		console.log('APPEARED');
 		var currId = $(this).attr('id');
 		updateNav($nav, $nav.find('[data-project="'+currId+'"]'));
-		// this code is executed for each appeared element
-		// rotateSlider( $(this).find('.images') );
 	  });
 	$nav.on('click', 'li', function(){
 		updateNav($nav, $(this));
-		// $nav.find('li').removeClass('active');
-		// $(this).addClass('active');
 	});
 
 });
