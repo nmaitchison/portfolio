@@ -39,7 +39,7 @@ $(function(){
 			"position" : "Junior Lighting TD / MPC Films Montréal",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"],
-			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the Pendleton Extensions and the generic CG water shots for the rescue sequence.<br>Software: Katana, RenderMan",
+			"description" : "These are screencaps of some of the shots I worked on for Disney’s <i>The Finest Hours</i>. I did lighting for the CG Pendleton ship extensions and the generic CG water shots for the rescue sequence. <br>Software: Katana, RenderMan",
 			"preview" : "images/the-finest-hours/TFH_cover.jpg",
 			"images" : ["images/the-finest-hours/MPC_VFX_O_CH0043_v32_still.jpg","images/the-finest-hours/MPC_VFX_O_CH0806_v160_still.jpg","images/the-finest-hours/MPC_VFX_O_CM0670_v53_still.jpg","images/the-finest-hours/MPC_VFX_O_PR0180_v37_still.jpg","images/the-finest-hours/MPC_VFX_O_PR0860_v62_still.jpg"],
 			"layout" : "horizontal"
@@ -50,7 +50,7 @@ $(function(){
 			"position" : "Junior Lighting TD / MPC Films Montréal",
 			"type" : "VFX Work",
 			"skills" : ["Lighting"],
-			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero environment for the final battle sequence.<br>Software: Katana, RenderMan",
+			"description" : "These are screencaps of some of the shots I worked on for Marvel’s <i>Fantastic Four</i>. I did lighting for The Thing and the Planet Zero set extensions for the final battle sequence.<br>Software: Katana, RenderMan",
 			"preview" : "images/F4/F4_cover.png",
 			"images" : ["images/F4/MPC_VFX_FF0112_still.jpg","images/F4/MPC_VFX_FF0614_still.jpg","images/F4/MPC_VFX_FF0616_still.jpg","images/F4/MPC_VFX_FF0956_still.jpg","images/F4/MPC_VFX_FF1076_still.jpg"],
 			"layout" : "horizontal"
@@ -72,7 +72,7 @@ $(function(){
 			"position" : "Student / Full Sail University",
 			"type" : "Demo Reel",
 "skills" : ["Modeling","Textures", "Lighting &amp; Shading"],
-			"description" : "This is the third scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials.<br>Software: Maya, MentalRay, Adobe Photoshop CS6",
+			"description" : "This is the third scene in my demo reel. I modeled everything in the scene, lit the scene and made all the textures and materials. <br>Software: Maya, MentalRay, Adobe Photoshop CS6",
 			"preview" : "images/PCC2/PCC2-preview.png",
 			"images" : ["images/PCC2/PCC2_render.jpg","images/PCC2/PCC2_wireframe.jpg"],
 			"layout" : "horizontal"
